@@ -45,7 +45,7 @@ function saving() {
         document.getElementById('saving-str').style.display = 'none';
         document.getElementById('saving-neg').style.display = 'block';
     }
-    else if (saveInput > balance) {
+    else if (saveAmount > balance) {
         document.getElementById('saving-str').style.display = 'none';
         document.getElementById('saving-neg').style.display = 'none';
         document.getElementById('saving-over').style.display = 'block';

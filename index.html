@@ -6,37 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Bank</title>
+    <!-- tailwind css link  -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <h1 class="text-4xl text-center p-3 font-semibold">Budget Bank</h1>
+    <!-- header start here  -->
+    <header>
+        <h1 class="text-4xl text-blue-700 text-center p-3 font-semibold">Budget Bank</h1>
+    </header>
+    <!-- header end here  -->
+
+    <!-- main start here  -->
     <main class="p-3">
         <div class="grid sm:grid-cols-2 grid-cols-1 gap-5 mx-auto items-center">
+            <!-- main image  -->
             <div class="">
-                <img class="hover:scale-105 duration-200 w-full" src="images/budget-bank.jpeg" alt="">
+                <img class="rounded hover:scale-105 duration-200 w-full" src="images/budget-bank.jpeg" alt="">
             </div>
-            <div class="bg-red-300">
+            <!-- main bank body  -->
+            <div class="bg-blue-100 rounded">
                 <h2 class="text-center text-2xl font-semibold m-2">Income</h2>
                 <div class="text-center m-2">
-                    <p class="inline">Income: </p><input id="income-input"
+                    <p class="inline font-semibold">Income: </p><input id="income-input"
                         class="border border-slate-500 rounded p-1 bg-red-100" type="text">
                 </div>
                 <h2 class="text-center text-2xl font-semibold m-2">Expenses</h2>
                 <div class="text-center m-2">
-                    <p class="inline">Foods: </p><input id="foods-input"
+                    <p class="inline font-semibold">Foods: </p><input id="foods-input"
                         class="border border-slate-500 rounded p-1 bg-red-100" type="text">
                 </div>
                 <div class="text-center m-2">
-                    <p class="inline">Rents: </p><input id="rents-input"
+                    <p class="inline font-semibold">Rents: </p><input id="rents-input"
                         class="border border-slate-500 rounded p-1 bg-red-100" type="text">
                 </div>
                 <div class="text-center m-2">
-                    <p class="inline">Clothes: </p><input id="clothes-input"
+                    <p class="inline font-semibold">Clothes: </p><input id="clothes-input"
                         class="border border-slate-500 rounded p-1 bg-red-100" type="text">
                 </div>
                 <div class="flex justify-center"><button onclick="calculate()"
-                        class="bg-blue-400 px-4 py-2 text-white font-semibold rounded">Calculate</button></div>
+                        class="bg-blue-700 px-4 py-2 text-white font-semibold rounded">Calculate</button></div>
                 <p id="calculate-str" class="text-rose-900 text-xl text-center font-bold hidden">Please! Enter a number.
                 </p>
                 <p id="calculate-neg" class="text-rose-900 text-xl text-center font-bold hidden">Please! Enter a
@@ -47,12 +56,15 @@
                 <h2 class="text-center text-2xl font-semibold m-2">Total Expenses: <span
                         id="total-expenses-amount">0</span></h2>
                 <h2 class="text-center text-2xl font-semibold m-2">Balance: <span id="balance-amount">0</span></h2>
+
+
+                <!-- savings part here  -->
                 <div class="text-center m-2">
-                    <p class="inline">Save</p> <input id="save-input"
+                    <p class="inline font-semibold">Save</p> <input id="save-input"
                         class="border border-slate-500 rounded p-1 bg-red-100" type="text">
-                    <p class="inline">%</p>
+                    <p class="inline font-semibold">%</p>
                     <div class="ms-2 inline"><button onclick="saving()"
-                            class="inline bg-blue-400 px-2 py-2 text-white font-semibold rounded">Save</button></div>
+                            class="inline bg-blue-700 px-2 py-2 text-white font-semibold rounded">Save</button></div>
 
                 </div>
 
@@ -70,6 +82,10 @@
         </div>
 
     </main>
+    <!-- main close here  -->
+
+
+    <!-- js link  -->
     <script src="scripts/script.js"></script>
 </body>
 

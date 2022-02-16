@@ -1,8 +1,10 @@
+// input getting function 
 function getInput(inputId) {
     const input = document.getElementById(inputId);
     const inputAmount = parseInt(input.value);
     return inputAmount;
 }
+// calculating function 
 function calculate() {
 
     const incomeInput = getInput('income-input');
@@ -11,6 +13,7 @@ function calculate() {
     const clothesInput = getInput('clothes-input');
     const totalExpences = foodsInput + rentsInput + clothesInput;
     const balanceAmount = incomeInput - totalExpences;
+    // error handle part 
     if (isNaN(incomeInput) || isNaN(foodsInput) || isNaN(rentsInput) || isNaN(clothesInput)) {
         document.getElementById('calculate-str').style.display = 'block';
     }
@@ -32,12 +35,14 @@ function calculate() {
     }
 
 }
+// saving function 
 function saving() {
     const saveInput = getInput('save-input');
     const incomeInput = getInput('income-input');
     const saveAmount = (incomeInput / 100) * saveInput;
     const balance = parseInt(document.getElementById('balance-amount').innerText);
     const remainingAmount = balance - saveAmount;
+    // error handle part 
     if (isNaN(incomeInput) || isNaN(saveInput)) {
         document.getElementById('saving-str').style.display = 'block';
     }

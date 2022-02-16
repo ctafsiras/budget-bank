@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYpE html>
 <html lang="en">
 
 <head>
@@ -11,27 +11,47 @@
 
 <body>
     <h1 class="text-4xl text-center p-3 font-semibold">Budget Bank</h1>
-    <main>
-        <div class="grid grid-cols-2 gap-5 w-3/4 mx-auto">
+    <main class="p-3">
+        <div class="grid sm:grid-cols-2 grid-cols-1 gap-5 mx-auto items-center">
             <div class="">
-                <img src="images/budget-bank.jpeg" alt="">
+                <img class="hover:scale-105 duration-200 w-full" src="images/budget-bank.jpeg" alt="">
             </div>
-            <div class="">
-                <h2 class="text-center text-4xl">Income</h2>
-                <p>Income: </p><input type="text">
-                <h2>Expenses</h2>
-                <p>Food: </p><input type="text">
-                <p>Rent: </p><input type="text">
-                <p>Clothes: </p><input type="text">
-                <button>Calculate</button>
-                <h2>Total Expenses: <span>0</span></h2>
-                <h2>Balance: <span>0</span></h2>
-                <p>Save</p> <input type="text"><p>%</p><button>Save</button>
-                <h2>Saving Amount: <span>0</span></h2>
-                <h2>Remaining Balance: <span>0</span></h2>
+            <div class="bg-red-300">
+                <h2 class="text-center text-2xl font-semibold m-2">Income</h2>
+                <div class="text-center m-2">
+                    <p class="inline">Income: </p><input class="border border-slate-500 rounded p-1 bg-red-100"
+                        type="text">
+                </div>
+                <h2 class="text-center text-2xl font-semibold m-2">Expenses</h2>
+                <div class="text-center m-2">
+                    <p class="inline">Income: </p><input class="border border-slate-500 rounded p-1 bg-red-100"
+                        type="text">
+                </div>
+                <div class="text-center m-2">
+                    <p class="inline">Income: </p><input class="border border-slate-500 rounded p-1 bg-red-100"
+                        type="text">
+                </div>
+                <div class="text-center m-2">
+                    <p class="inline">Income: </p><input class="border border-slate-500 rounded p-1 bg-red-100"
+                        type="text">
+                </div>
+                <div class="flex justify-center"><button
+                        class="bg-blue-400 px-4 py-2 text-white font-semibold rounded">Calculate</button></div>
+                <h2 class="text-center text-2xl font-semibold m-2">Total Expenses: <span>0</span></h2>
+                <h2 class="text-center text-2xl font-semibold m-2">Balance: <span>0</span></h2>
+                <div class="text-center m-2">
+                    <p class="inline">Save</p> <input class="border border-slate-500 rounded p-1 bg-red-100"
+                        type="text">
+                    <p class="inline">%</p>
+                    <div class="ms-2 inline"><button
+                            class="inline bg-blue-400 px-2 py-2 text-white font-semibold rounded">Save</button></div>
+
+                </div>
+                <h2 class="text-center text-2xl font-semibold m-2">Saving Amount: <span>0</span></h2>
+                <h2 class="text-center text-2xl font-semibold m-2">Remaining Balance: <span>0</span></h2>
             </div>
         </div>
-    
+
     </main>
 </body>
 

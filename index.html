@@ -19,40 +19,51 @@
             <div class="bg-red-300">
                 <h2 class="text-center text-2xl font-semibold m-2">Income</h2>
                 <div class="text-center m-2">
-                    <p class="inline">Income: </p><input class="border border-slate-500 rounded p-1 bg-red-100"
-                        type="text">
+                    <p class="inline">Income: </p><input id="income-input"
+                        class="border border-slate-500 rounded p-1 bg-red-100" type="text">
                 </div>
                 <h2 class="text-center text-2xl font-semibold m-2">Expenses</h2>
                 <div class="text-center m-2">
-                    <p class="inline">Income: </p><input class="border border-slate-500 rounded p-1 bg-red-100"
-                        type="text">
+                    <p class="inline">Foods: </p><input id="foods-input"
+                        class="border border-slate-500 rounded p-1 bg-red-100" type="text">
                 </div>
                 <div class="text-center m-2">
-                    <p class="inline">Income: </p><input class="border border-slate-500 rounded p-1 bg-red-100"
-                        type="text">
+                    <p class="inline">Rents: </p><input id="rents-input"
+                        class="border border-slate-500 rounded p-1 bg-red-100" type="text">
                 </div>
                 <div class="text-center m-2">
-                    <p class="inline">Income: </p><input class="border border-slate-500 rounded p-1 bg-red-100"
-                        type="text">
+                    <p class="inline">Clothes: </p><input id="clothes-input"
+                        class="border border-slate-500 rounded p-1 bg-red-100" type="text">
                 </div>
-                <div class="flex justify-center"><button
+                <div class="flex justify-center"><button onclick="calculate()"
                         class="bg-blue-400 px-4 py-2 text-white font-semibold rounded">Calculate</button></div>
-                <h2 class="text-center text-2xl font-semibold m-2">Total Expenses: <span>0</span></h2>
-                <h2 class="text-center text-2xl font-semibold m-2">Balance: <span>0</span></h2>
+                <p class="text-rose-900 text-xl text-center font-bold hidden">Please! Enter a number.</p>
+                <p class="text-rose-900 text-xl text-center font-bold hidden">Please! Enter a positive number.</p>
+                <p class="text-rose-900 text-xl text-center font-bold hidden">Sorry, Your Expense is more than your
+                    income.</p>
+                <h2 class="text-center text-2xl font-semibold m-2">Total Expenses: <span
+                        id="total-expenses-amount">0</span></h2>
+                <h2 class="text-center text-2xl font-semibold m-2">Balance: <span id="balance-amount">0</span></h2>
                 <div class="text-center m-2">
-                    <p class="inline">Save</p> <input class="border border-slate-500 rounded p-1 bg-red-100"
-                        type="text">
+                    <p class="inline">Save</p> <input id="save-input"
+                        class="border border-slate-500 rounded p-1 bg-red-100" type="text">
                     <p class="inline">%</p>
-                    <div class="ms-2 inline"><button
+                    <div class="ms-2 inline"><button onclick="saving()"
                             class="inline bg-blue-400 px-2 py-2 text-white font-semibold rounded">Save</button></div>
 
                 </div>
-                <h2 class="text-center text-2xl font-semibold m-2">Saving Amount: <span>0</span></h2>
-                <h2 class="text-center text-2xl font-semibold m-2">Remaining Balance: <span>0</span></h2>
+                <h2 class="text-center text-2xl font-semibold m-2">Saving Amount: <span id="saving-amount">0</span></h2>
+                <p class="text-rose-900 text-xl text-center font-bold hidden">Please! Enter a number.</p>
+                <p class="text-rose-900 text-xl text-center font-bold hidden">Please! Enter a positive number.</p>
+                <p class="text-rose-900 text-xl text-center font-bold hidden">Sorry, Your Saving is crossing your
+                    income.</p>
+                <h2 class="text-center text-2xl font-semibold m-2">Remaining Balance: <span
+                        id="remaining-amount">0</span></h2>
             </div>
         </div>
 
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
